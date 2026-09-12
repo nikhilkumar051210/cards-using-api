@@ -1,0 +1,51 @@
+.card{
+    height :300px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 20px;
+    margin : 10px;
+    background:
+    linear-gradient(rgb(96, 40, 40),rgb(244, 7, 7));
+    line-height: 0.5;
+}
+
+h1,p{
+    font-size: large;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
+.image{
+    height:180px;
+    width: 150px;
+    object-fit: contain;
+    /* margin-left: 20px; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#cards{
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 400px;
+    justify-content: center;
+}
+
+@media(max-width:480px) {
+     .card{
+        width: 60%;
+        height: 400px;
+        font-size: large;
+        height: 300px;
+        margin:10px;
+     }
+}
+
